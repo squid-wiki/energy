@@ -1,33 +1,31 @@
 ---
 slug: /
 sidebar_position: 1
-title: Welcome
+title: 欢迎
 ---
 
 # ⚡ Squid Grid
 
-Notes and an open Java platform for smart-meter integration — the energy section of Squid 3G.
+智能电表接入的知识站与开源 Java 平台，Squid 3G 的能源板块。
 
-> 中文：能源设备接入的知识站与 Java 平台。英文为主，中文为辅。
+## 主题
 
-## Topics
-
-| Area | What's covered |
+| 领域 | 内容 |
 |---|---|
-| IoT | Device gateways and connectivity |
-| HES | Head-end: reads, commands, events |
-| MDM | Validation, estimation, storage |
-| Prepaid | Balance, vending, STS tokens (IEC 62055) |
+| IoT | 设备网关与通信接入 |
+| HES | 头端系统：抄读、下发、事件 |
+| MDM | 校验、估算、存储 |
+| 预付费 | 余额、购电、STS 令牌（IEC 62055） |
 
-## Protocols
+## 协议
 
-- **DLMS/COSEM** — OBIS, interface classes, associations, HLS-GMAC security
-- **DL/T 645** — China's meter protocol
-- **ANSI C12.18 / C12.19 / C12.22** — North American table model
-- **STS** — 20-digit prepaid tokens
+- **[DLMS/COSEM](./protocols/dlms-cosem/architecture-and-history.md)**：OBIS、接口类、应用连接、HLS-GMAC 安全
+- **DL/T 645**：中国电表通信协议
+- **ANSI C12.18 / C12.19 / C12.22**：北美表格模型
+- **STS**：20 位预付费令牌
 
-## Platform
+## 平台
 
-`grid/platform` is a Maven multi-module project (`wiki.squid.grid`) with a protocol layer that does no IO: bytes in, bytes out. Licensed under Apache 2.0. It does not use any Gurux code.
+`grid/platform` 是 Maven 多模块项目（`wiki.squid.grid`），协议层不做 IO：字节进，字节出。代码采用 Apache 2.0 许可，未使用任何 Gurux 代码。
 
-*Under construction.*
+*建设中。*

@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Squid Grid',
-  tagline: 'Smart-meter integration: IoT · HES · MDM · Prepaid',
+  tagline: '智能电表接入：IoT · HES · MDM · 预付费',
   favicon: 'img/favicon.svg',
 
   url: 'https://grid.squid.wiki',
@@ -15,7 +15,7 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  i18n: {defaultLocale: 'en', locales: ['en']},
+  i18n: {defaultLocale: 'zh-Hans', locales: ['zh-Hans']},
 
   presets: [
     [
@@ -38,7 +38,7 @@ const config: Config = {
       title: 'Squid Grid',
       logo: {alt: 'Squid', src: 'img/favicon.svg'},
       items: [
-        {type: 'docSidebar', sidebarId: 'main', position: 'left', label: 'Docs'},
+        {type: 'docSidebar', sidebarId: 'main', position: 'left', label: '文档'},
         {href: 'https://squid.wiki', label: 'squid.wiki', position: 'right'},
         {href: 'https://github.com/squid-wiki/grid', label: 'GitHub', position: 'right'},
       ],
