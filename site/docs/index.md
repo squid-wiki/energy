@@ -19,7 +19,7 @@ title: 欢迎
 
 ## 协议
 
-- **[DLMS/COSEM](./protocols/dlms-cosem/architecture-and-history.md)**：OBIS、接口类、应用连接、HLS-GMAC 安全
+- **[DLMS/COSEM](./protocols/dlms-cosem/architecture-and-history.md)**：OBIS、接口类、应用连接、HLS-GMAC 安全（[入门：读一次电表时钟](./protocols/dlms-cosem/read-clock.md)）
 - **DL/T 645**：中国电表通信协议
 - **ANSI C12.18 / C12.19 / C12.22**：北美表格模型
 - **STS**：20 位预付费令牌
