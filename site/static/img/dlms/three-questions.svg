@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" role="img" aria-label="DLMS/COSEM 把数据模型、访问方式、通信方式分开，通信方式可以替换">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6b7280"/></marker>
+  </defs>
+  <style>
+    .h{font-size:17px;font-weight:600;fill:#111827}
+    .t{font-size:14px;fill:#374151}
+    .r{font-size:13.5px;fill:#6b7280;text-anchor:end}
+    .c{font-size:14px;font-weight:600;fill:#111827;text-anchor:middle}
+    .g{fill:#dcfce7;stroke:#15803d;stroke-width:1.5}
+    .b{fill:#dbeafe;stroke:#2563eb;stroke-width:1.5}
+    .w{fill:#ffffff;stroke:#15803d;stroke-width:1.5}
+    .ar{stroke:#6b7280;stroke-width:2;fill:none;marker-end:url(#a)}
+  </style>
+  <rect x="1" y="1" width="878" height="398" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <rect class="b" x="40" y="24" width="800" height="76" rx="10"/>
+  <text class="h" x="62" y="56">电表里有什么数据？</text>
+  <text class="t" x="62" y="82">COSEM 接口类 + OBIS 编码</text>
+  <text class="r" x="820" y="56">计量功能变化时才改</text>
+
+  <path class="ar" d="M440 100 V122"/>
+
+  <rect class="g" x="40" y="124" width="800" height="76" rx="10"/>
+  <text class="h" x="62" y="156">怎么读、写、操作这些数据？</text>
+  <text class="t" x="62" y="182">DLMS 应用层：建立连接、GET、SET、ACTION、安全</text>
+  <text class="r" x="820" y="156">很少变化</text>
+
+  <path class="ar" d="M440 200 V222"/>
+
+  <rect class="g" x="40" y="224" width="800" height="118" rx="10"/>
+  <text class="h" x="62" y="254">字节怎么传过去？</text>
+  <text class="r" x="820" y="254">通信方式变化时，只换这一层</text>
+  <rect class="w" x="62" y="272" width="140" height="52" rx="6"/><text class="c" x="132" y="303">光口</text>
+  <rect class="w" x="216" y="272" width="140" height="52" rx="6"/><text class="c" x="286" y="303">RS-485</text>
+  <rect class="w" x="370" y="272" width="140" height="52" rx="6"/><text class="c" x="440" y="303">GPRS / LTE</text>
+  <rect class="w" x="524" y="272" width="140" height="52" rx="6"/><text class="c" x="594" y="303">以太网</text>
+  <rect class="w" x="678" y="272" width="140" height="52" rx="6"/><text class="c" x="748" y="303">电力线载波</text>
+
+  <text x="440" y="374" text-anchor="middle" font-size="15.5" font-weight="600" fill="#111827">同一条"读总电量"请求，换任何一种通信方式，上面两层都不用改</text>
+</svg>

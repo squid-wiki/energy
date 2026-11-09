@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 370" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" role="img" aria-label="BER 的标签、长度、值结构，以及用户信息一层套一层的嵌套">
+  <style>
+    .h{font-size:15.5px;font-weight:600;fill:#111827}
+    .c{font-size:15.5px;font-weight:600;fill:#111827;text-anchor:middle}
+    .t{font-size:13.5px;fill:#374151;text-anchor:middle}
+    .m{font-family:Consolas,Menlo,monospace;font-size:18px;font-weight:600;fill:#111827;text-anchor:middle}
+    .mm{font-family:Consolas,Menlo,monospace;font-size:15px;font-weight:600;fill:#111827}
+    .a{fill:#fef3c7;stroke:#b45309;stroke-width:1.5}
+    .a2{fill:#fde68a;stroke:#b45309;stroke-width:1.5}
+    .g{fill:#dcfce7;stroke:#15803d;stroke-width:1.5}
+  </style>
+  <rect x="1" y="1" width="878" height="368" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <text class="c" x="440" y="32">最小的一项：先说类型，再说长度，最后才是内容</text>
+  <rect class="a" x="215" y="48" width="140" height="74" rx="6"/><text class="m" x="285" y="78">02</text><text class="t" x="285" y="106">标签：这是整数</text>
+  <rect class="a" x="370" y="48" width="140" height="74" rx="6"/><text class="m" x="440" y="78">01</text><text class="t" x="440" y="106">长度：1 字节</text>
+  <rect class="a" x="525" y="48" width="140" height="74" rx="6"/><text class="m" x="595" y="78">00</text><text class="t" x="595" y="106">值：0</text>
+
+  <text class="c" x="440" y="158">值里面还可以再放一项，就形成了嵌套</text>
+
+  <rect class="a" x="40" y="174" width="800" height="176" rx="10"/>
+  <text class="mm" x="60" y="201">BE 10</text>
+  <text class="h" x="130" y="201">用户信息，内容 16 字节</text>
+  <text class="t" x="760" y="201">BER</text>
+
+  <rect class="a2" x="70" y="214" width="740" height="122" rx="8"/>
+  <text class="mm" x="90" y="240">04 0E</text>
+  <text class="h" x="160" y="240">字节串，内容 14 字节</text>
+  <text class="t" x="770" y="240">BER</text>
+
+  <rect class="g" x="100" y="254" width="680" height="68" rx="6"/>
+  <text class="h" x="120" y="280">InitiateRequest</text>
+  <text class="t" x="720" y="280">A-XDR</text>
+  <text class="mm" x="120" y="307">01 00 00 00 06 5F 1F 04 00 00 00 10 FF FF</text>
+</svg>

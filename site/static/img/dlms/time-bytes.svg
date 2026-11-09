@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" role="img" aria-label="12 字节时间的每个字节含义">
+  <style>
+    .m{font-family:Consolas,Menlo,monospace;font-size:18px;font-weight:600;fill:#111827;text-anchor:middle}
+    .l{font-size:14px;font-weight:600;fill:#111827;text-anchor:middle}
+    .v{font-size:13.5px;fill:#374151;text-anchor:middle}
+    .b{fill:#dbeafe;stroke:#2563eb;stroke-width:1.5}
+    .n{fill:#f3f4f6;stroke:#9ca3af;stroke-width:1.5}
+    .tl{stroke:#9ca3af;stroke-width:1.2;fill:none}
+  </style>
+  <rect x="1" y="1" width="878" height="228" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <rect class="b" x="40" y="30" width="62" height="50" rx="6"/><text class="m" x="71" y="62">07</text>
+  <rect class="b" x="107" y="30" width="62" height="50" rx="6"/><text class="m" x="138" y="62">EA</text>
+  <rect class="b" x="174" y="30" width="62" height="50" rx="6"/><text class="m" x="205" y="62">0B</text>
+  <rect class="b" x="241" y="30" width="62" height="50" rx="6"/><text class="m" x="272" y="62">08</text>
+  <rect class="b" x="308" y="30" width="62" height="50" rx="6"/><text class="m" x="339" y="62">07</text>
+  <rect class="b" x="375" y="30" width="62" height="50" rx="6"/><text class="m" x="406" y="62">10</text>
+  <rect class="b" x="442" y="30" width="62" height="50" rx="6"/><text class="m" x="473" y="62">1E</text>
+  <rect class="b" x="509" y="30" width="62" height="50" rx="6"/><text class="m" x="540" y="62">00</text>
+  <rect class="n" x="576" y="30" width="62" height="50" rx="6"/><text class="m" x="607" y="62">FF</text>
+  <rect class="n" x="643" y="30" width="62" height="50" rx="6"/><text class="m" x="674" y="62">80</text>
+  <rect class="n" x="710" y="30" width="62" height="50" rx="6"/><text class="m" x="741" y="62">00</text>
+  <rect class="b" x="777" y="30" width="62" height="50" rx="6"/><text class="m" x="808" y="62">00</text>
+
+  <path class="tl" d="M40 88 V96 H169 V88"/>
+  <path class="tl" d="M643 88 V96 H772 V88"/>
+
+  <text class="l" x="104.5" y="120">年</text><text class="v" x="104.5" y="142">2026</text>
+  <text class="l" x="205" y="120">月</text><text class="v" x="205" y="142">11</text>
+  <text class="l" x="272" y="120">日</text><text class="v" x="272" y="142">8</text>
+  <text class="l" x="339" y="120">星期</text><text class="v" x="339" y="142">日</text>
+  <text class="l" x="406" y="120">时</text><text class="v" x="406" y="142">16</text>
+  <text class="l" x="473" y="120">分</text><text class="v" x="473" y="142">30</text>
+  <text class="l" x="540" y="120">秒</text><text class="v" x="540" y="142">0</text>
+  <text class="l" x="607" y="120">1/100 秒</text><text class="v" x="607" y="142">未指定</text>
+  <text class="l" x="707.5" y="120">与 UTC 的偏差</text><text class="v" x="707.5" y="142">未指定</text>
+  <text class="l" x="808" y="120">状态</text><text class="v" x="808" y="142">正常</text>
+
+  <text x="440" y="196" text-anchor="middle" font-size="18" font-weight="600" fill="#1e3a8a">2026-11-08 星期日 16:30:00</text>
+</svg>
