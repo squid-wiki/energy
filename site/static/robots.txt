@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://grid.squid.wiki/sitemap.xml
+Sitemap: https://energy.squid.wiki/sitemap.xml

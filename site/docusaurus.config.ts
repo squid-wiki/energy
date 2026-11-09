@@ -7,10 +7,10 @@ const config: Config = {
   tagline: '智能电表接入：IoT · HES · MDM · 预付费',
   favicon: 'img/favicon.svg',
 
-  url: 'https://grid.squid.wiki',
+  url: 'https://energy.squid.wiki',
   baseUrl: '/',
   organizationName: 'squid-wiki',
-  projectName: 'grid',
+  projectName: 'energy',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -24,7 +24,7 @@ const config: Config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/squid-wiki/grid/edit/main/site/',
+          editUrl: 'https://github.com/squid-wiki/energy/edit/main/site/',
         },
         blog: false,
         theme: {customCss: './src/css/custom.css'},
@@ -40,7 +40,7 @@ const config: Config = {
       items: [
         {type: 'docSidebar', sidebarId: 'main', position: 'left', label: '文档'},
         {href: 'https://squid.wiki', label: 'squid.wiki', position: 'right'},
-        {href: 'https://github.com/squid-wiki/grid', label: 'GitHub', position: 'right'},
+        {href: 'https://github.com/squid-wiki/energy', label: 'GitHub', position: 'right'},
       ],
     },
     footer: {
@@ -49,9 +49,9 @@ const config: Config = {
         {
           title: 'Squid 3G',
           items: [
-            {label: 'Grid · Energy', href: 'https://grid.squid.wiki'},
+            {label: 'Grid · Energy', href: 'https://energy.squid.wiki'},
             {label: 'Game · Gaming', href: 'https://game.squid.wiki'},
-            {label: 'Gain · Investing', href: 'https://gain.squid.wiki'},
+            {label: 'Gain · Investing', href: 'https://finance.squid.wiki'},
           ],
         },
       ],

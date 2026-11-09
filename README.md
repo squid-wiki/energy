@@ -1,6 +1,6 @@
 # ⚡ Squid Grid
 
-> [grid.squid.wiki](https://grid.squid.wiki)：智能电表接入的知识站与开源 Java 平台，涵盖 IoT、HES、MDM 和预付费。
+> [energy.squid.wiki](https://energy.squid.wiki)：智能电表接入的知识站与开源 Java 平台，涵盖 IoT、HES、MDM 和预付费。
 
 ## 目录结构
 

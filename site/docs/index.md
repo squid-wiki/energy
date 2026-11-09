@@ -26,6 +26,6 @@ title: 欢迎
 
 ## 平台
 
-`grid/platform` 是 Maven 多模块项目（`wiki.squid.grid`），协议层不做 IO：字节进，字节出。代码采用 Apache 2.0 许可，未使用任何 Gurux 代码。
+`energy/platform` 是 Maven 多模块项目（`wiki.squid.grid`），协议层不做 IO：字节进，字节出。代码采用 Apache 2.0 许可，未使用任何 Gurux 代码。
 
 *建设中。*
