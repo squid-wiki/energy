@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Squid Grid',
+  title: 'Squid Wiki · 能源',
   tagline: '智能电表接入：IoT · HES · MDM · 预付费',
   favicon: 'img/favicon.svg',
 
@@ -35,7 +35,7 @@ const config: Config = {
   themeConfig: {
     colorMode: {respectPrefersColorScheme: true},
     navbar: {
-      title: 'Squid Grid',
+      title: 'Squid Wiki · 能源',
       logo: {alt: 'Squid', src: 'img/favicon.svg'},
       items: [
         {type: 'docSidebar', sidebarId: 'main', position: 'left', label: '文档'},
@@ -47,11 +47,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Squid 3G',
+          title: 'Squid Wiki',
           items: [
-            {label: 'Grid · Energy', href: 'https://energy.squid.wiki'},
-            {label: 'Game · Gaming', href: 'https://game.squid.wiki'},
-            {label: 'Gain · Investing', href: 'https://finance.squid.wiki'},
+            {label: 'Energy · 能源', href: 'https://energy.squid.wiki'},
+            {label: 'Game · 游戏', href: 'https://game.squid.wiki'},
+            {label: 'Finance · 理财', href: 'https://finance.squid.wiki'},
           ],
         },
       ],

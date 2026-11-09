@@ -4,9 +4,9 @@ sidebar_position: 1
 title: 欢迎
 ---
 
-# ⚡ Squid Grid
+# ⚡ 能源
 
-智能电表接入的知识站与开源 Java 平台，Squid 3G 的能源板块。
+智能电表接入的知识站与开源 Java 平台，Squid Wiki 的能源板块。
 
 ## 主题
 
