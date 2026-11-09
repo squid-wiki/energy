@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" role="img" aria-label="用类 ID、OBIS、属性三个数逐步定位到时钟的当前时间">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker>
+  </defs>
+  <style>
+    .h{font-size:15px;font-weight:600;fill:#111827;text-anchor:middle}
+    .m{font-family:Consolas,Menlo,monospace;font-size:14px;fill:#2563eb;text-anchor:middle}
+    .t{font-size:13.5px;fill:#6b7280;text-anchor:middle}
+    .on{font-size:14px;font-weight:600;fill:#1e3a8a;text-anchor:middle}
+    .box{fill:#f9fafb;stroke:#d1d5db;stroke-width:1.2}
+    .hit{fill:#dbeafe;stroke:#2563eb;stroke-width:2}
+    .ar{stroke:#2563eb;stroke-width:2.5;fill:none;marker-end:url(#a)}
+  </style>
+  <rect x="1" y="1" width="878" height="378" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <text class="h" x="115" y="42">① 类 ID：哪种模板</text>
+  <text class="m" x="115" y="66">00 08</text>
+  <text class="h" x="365" y="42">② OBIS：哪个对象</text>
+  <text class="m" x="365" y="66">00 00 01 00 00 FF</text>
+  <text class="h" x="615" y="42">③ 属性：哪一项</text>
+  <text class="m" x="615" y="66">02</text>
+  <text class="h" x="795" y="42">读到的值</text>
+
+  <!-- 列 1 -->
+  <rect class="box" x="30" y="90" width="170" height="40" rx="6"/><text class="t" x="115" y="115">3 · Register</text>
+  <rect class="hit" x="30" y="140" width="170" height="40" rx="6"/><text class="on" x="115" y="165">8 · Clock</text>
+  <rect class="box" x="30" y="190" width="170" height="40" rx="6"/><text class="t" x="115" y="215">15 · Association LN</text>
+  <rect class="box" x="30" y="240" width="170" height="40" rx="6"/><text class="t" x="115" y="265">……</text>
+
+  <!-- 列 2 -->
+  <rect class="box" x="250" y="90" width="230" height="40" rx="6"/><text class="t" x="365" y="115">总电量 1-0:1.8.0.255</text>
+  <rect class="hit" x="250" y="140" width="230" height="40" rx="6"/><text class="on" x="365" y="165">时钟 0-0:1.0.0.255</text>
+  <rect class="box" x="250" y="190" width="230" height="40" rx="6"/><text class="t" x="365" y="215">当前连接 0-0:40.0.0.255</text>
+  <rect class="box" x="250" y="240" width="230" height="40" rx="6"/><text class="t" x="365" y="265">……</text>
+
+  <!-- 列 3 -->
+  <rect class="box" x="530" y="90" width="170" height="40" rx="6"/><text class="t" x="615" y="115">1 · logical_name</text>
+  <rect class="hit" x="530" y="140" width="170" height="40" rx="6"/><text class="on" x="615" y="165">2 · time</text>
+  <rect class="box" x="530" y="190" width="170" height="40" rx="6"/><text class="t" x="615" y="215">3 · time_zone</text>
+  <rect class="box" x="530" y="240" width="170" height="40" rx="6"/><text class="t" x="615" y="265">4 · status</text>
+  <rect class="box" x="530" y="290" width="170" height="40" rx="6"/><text class="t" x="615" y="315">5–9 · 夏令时、时钟来源</text>
+
+  <!-- 结果 -->
+  <rect class="hit" x="745" y="130" width="110" height="60" rx="6"/>
+  <text class="on" x="800" y="155">2020-06-24</text>
+  <text class="on" x="800" y="175">12:03:51</text>
+
+  <path class="ar" d="M200 160 H248"/>
+  <path class="ar" d="M480 160 H528"/>
+  <path class="ar" d="M700 160 H743"/>
+
+  <text x="240" y="325" text-anchor="middle" font-size="15" fill="#374151">类比：Clock clock = meter.get("0-0:1.0.0.255");</text>
+  <text x="240" y="350" text-anchor="middle" font-size="15" fill="#374151">　　　return clock.time;</text>
+</svg>

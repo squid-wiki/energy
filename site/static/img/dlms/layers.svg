@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 490" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" role="img" aria-label="一次读时钟的完整嵌套结构，按沿用标准、DLMS、COSEM 着色">
+  <style>
+    .h{font-size:16px;font-weight:600;fill:#111827}
+    .t{font-size:14px;fill:#374151}
+    .m{font-family:Consolas,Menlo,monospace;font-size:13.5px;fill:#374151}
+    .a{fill:#fef3c7;stroke:#b45309;stroke-width:1.5}
+    .g{fill:#dcfce7;stroke:#15803d;stroke-width:1.5}
+    .b{fill:#dbeafe;stroke:#2563eb;stroke-width:1.5}
+  </style>
+  <rect x="1" y="1" width="878" height="488" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <rect class="a" x="20" y="20" width="840" height="400" rx="10"/>
+  <text class="h" x="38" y="46">TCP/IP</text><text class="t" x="110" y="46">沿用互联网标准，端口 4059</text>
+
+  <rect class="g" x="40" y="60" width="800" height="345" rx="10"/>
+  <text class="h" x="58" y="86">Wrapper 头</text><text class="t" x="170" y="86">8 字节：版本、源、目的、长度</text><text class="m" x="770" y="86">绿皮书</text>
+
+  <!-- 左：连接 -->
+  <rect class="a" x="60" y="102" width="375" height="285" rx="10"/>
+  <text class="h" x="78" y="128">建立连接：AARQ / AARE</text>
+  <text class="t" x="78" y="152">沿用 ACSE（ISO/IEC 8649、8650）</text>
+  <text class="t" x="78" y="174">编码沿用 BER，规则编号沿用 OID</text>
+  <text class="m" x="78" y="208">BE 10 04 0E</text>
+  <text class="t" x="172" y="208">← 通用标准到此为止</text>
+  <rect class="g" x="80" y="224" width="335" height="145" rx="8"/>
+  <text class="h" x="98" y="250">InitiateRequest / Response</text>
+  <text class="t" x="98" y="274">DLMS 自有：xDLMS + A-XDR</text>
+  <text class="t" x="98" y="298">内容：功能位、最大 PDU、版本</text>
+  <text class="m" x="98" y="330">绿皮书</text>
+
+  <!-- 右：访问数据 -->
+  <rect class="g" x="455" y="102" width="375" height="285" rx="10"/>
+  <text class="h" x="473" y="128">访问数据：GET 请求 / 响应</text>
+  <text class="t" x="473" y="152">DLMS 自有：xDLMS + A-XDR</text>
+  <text class="t" x="473" y="174">内容：服务类型、调用 ID、结果</text>
+  <text class="m" x="473" y="208">绿皮书</text>
+  <rect class="b" x="475" y="224" width="335" height="145" rx="8"/>
+  <text class="h" x="493" y="250">类 ID + OBIS + 属性</text>
+  <text class="t" x="493" y="274">要访问电表里的哪一项数据</text>
+  <text class="t" x="493" y="298">响应里 12 字节时间的格式</text>
+  <text class="m" x="493" y="330">COSEM · 蓝皮书</text>
+
+  <!-- 图例 -->
+  <rect class="a" x="170" y="445" width="20" height="20" rx="4"/><text class="t" x="198" y="460">沿用业内标准</text>
+  <rect class="g" x="360" y="445" width="20" height="20" rx="4"/><text class="t" x="388" y="460">DLMS（绿皮书）</text>
+  <rect class="b" x="570" y="445" width="20" height="20" rx="4"/><text class="t" x="598" y="460">COSEM（蓝皮书）</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" role="img" aria-label="建立连接时报文中的字段，与连接对象属性之间的对应关系">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6b7280"/></marker>
+  </defs>
+  <style>
+    .h{font-size:16px;font-weight:600;text-anchor:middle}
+    .s{font-size:13px;fill:#6b7280;text-anchor:middle}
+    .t{font-size:14.5px;font-weight:600;fill:#111827;text-anchor:middle}
+    .d{font-family:Consolas,Menlo,'Microsoft YaHei',monospace;font-size:13px;fill:#374151;text-anchor:middle}
+    .g{fill:#dcfce7;stroke:#15803d;stroke-width:1.5}
+    .b{fill:#dbeafe;stroke:#2563eb;stroke-width:1.5}
+    .ar{stroke:#6b7280;stroke-width:2;fill:none;marker-end:url(#a)}
+  </style>
+  <rect x="1" y="1" width="878" height="418" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <text class="h" x="210" y="40" fill="#15803d">建立连接时的报文（DLMS）</text>
+  <text class="s" x="210" y="62">动作：一来一回就结束了</text>
+  <text class="h" x="670" y="40" fill="#2563eb">对象 0-0:40.0.0.255（COSEM）</text>
+  <text class="s" x="670" y="62">结果：保存下来，随时可读</text>
+
+  <rect class="g" x="40" y="80" width="340" height="56" rx="8"/>
+  <text class="t" x="210" y="103">Wrapper 的源、目的地址</text><text class="d" x="210" y="124">00 10 / 00 01</text>
+  <rect class="b" x="500" y="80" width="340" height="56" rx="8"/>
+  <text class="t" x="670" y="103">属性 3 · associated_partners_id</text><text class="d" x="670" y="124">16、1</text>
+  <path class="ar" d="M380 108 H498"/>
+
+  <rect class="g" x="40" y="146" width="340" height="56" rx="8"/>
+  <text class="t" x="210" y="169">A1：应用上下文</text><text class="d" x="210" y="190">60 85 74 05 08 01 01</text>
+  <rect class="b" x="500" y="146" width="340" height="56" rx="8"/>
+  <text class="t" x="670" y="169">属性 4 · application_context_name</text><text class="d" x="670" y="190">LN，不加密</text>
+  <path class="ar" d="M380 174 H498"/>
+
+  <rect class="g" x="40" y="212" width="340" height="56" rx="8"/>
+  <text class="t" x="210" y="235">InitiateResponse：功能位、PDU、版本</text><text class="d" x="210" y="256">00 00 10 / 03 40 / 06</text>
+  <rect class="b" x="500" y="212" width="340" height="56" rx="8"/>
+  <text class="t" x="670" y="235">属性 5 · xDLMS_context_info</text><text class="d" x="670" y="256">GET、832、版本 6</text>
+  <path class="ar" d="M380 240 H498"/>
+
+  <rect class="g" x="40" y="278" width="340" height="56" rx="8"/>
+  <text class="t" x="210" y="301">AARQ 没有认证字段</text><text class="d" x="210" y="322">默认：无认证</text>
+  <rect class="b" x="500" y="278" width="340" height="56" rx="8"/>
+  <text class="t" x="670" y="301">属性 6 · authentication_mechanism_name</text><text class="d" x="670" y="322">机制编号 0：无认证</text>
+  <path class="ar" d="M380 306 H498"/>
+
+  <rect class="g" x="40" y="344" width="340" height="56" rx="8"/>
+  <text class="t" x="210" y="367">A2：连接结果</text><text class="d" x="210" y="388">02 01 00（接受）</text>
+  <rect class="b" x="500" y="344" width="340" height="56" rx="8"/>
+  <text class="t" x="670" y="367">属性 8 · association_status</text><text class="d" x="670" y="388">2：已连接</text>
+  <path class="ar" d="M380 372 H498"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" role="img" aria-label="GET 请求的 13 个字节按 DLMS 和 COSEM 归属划分">
+  <style>
+    .label{font-size:15px;font-weight:600;text-anchor:middle}
+    .sub{font-size:13px;fill:#374151;text-anchor:middle}
+    .byte{font-family:Consolas,Menlo,monospace;font-size:18px;font-weight:600;text-anchor:middle;fill:#111827}
+    .g{fill:#dcfce7;stroke:#15803d;stroke-width:1.5}
+    .b{fill:#dbeafe;stroke:#2563eb;stroke-width:1.5}
+    .gl{stroke:#15803d;stroke-width:2;fill:none}
+    .bl{stroke:#2563eb;stroke-width:2;fill:none}
+    .tl{stroke:#9ca3af;stroke-width:1.2;fill:none}
+  </style>
+  <rect x="1" y="1" width="878" height="298" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <text x="136" y="52" class="label" fill="#15803d">DLMS：动作</text>
+  <text x="498" y="52" class="label" fill="#2563eb">COSEM：要操作谁（9 字节）</text>
+  <text x="798" y="52" class="label" fill="#15803d">DLMS</text>
+  <path class="gl" d="M50 72 V64 H222 V72"/>
+  <path class="bl" d="M230 72 V64 H766 V72"/>
+  <path class="gl" d="M770 72 V64 H826 V72"/>
+
+  <g>
+    <rect class="g" x="50" y="84" width="56" height="50" rx="6"/><text class="byte" x="78" y="116">C0</text>
+    <rect class="g" x="110" y="84" width="56" height="50" rx="6"/><text class="byte" x="138" y="116">01</text>
+    <rect class="g" x="170" y="84" width="56" height="50" rx="6"/><text class="byte" x="198" y="116">C1</text>
+    <rect class="b" x="230" y="84" width="56" height="50" rx="6"/><text class="byte" x="258" y="116">00</text>
+    <rect class="b" x="290" y="84" width="56" height="50" rx="6"/><text class="byte" x="318" y="116">08</text>
+    <rect class="b" x="350" y="84" width="56" height="50" rx="6"/><text class="byte" x="378" y="116">00</text>
+    <rect class="b" x="410" y="84" width="56" height="50" rx="6"/><text class="byte" x="438" y="116">00</text>
+    <rect class="b" x="470" y="84" width="56" height="50" rx="6"/><text class="byte" x="498" y="116">01</text>
+    <rect class="b" x="530" y="84" width="56" height="50" rx="6"/><text class="byte" x="558" y="116">00</text>
+    <rect class="b" x="590" y="84" width="56" height="50" rx="6"/><text class="byte" x="618" y="116">00</text>
+    <rect class="b" x="650" y="84" width="56" height="50" rx="6"/><text class="byte" x="678" y="116">FF</text>
+    <rect class="b" x="710" y="84" width="56" height="50" rx="6"/><text class="byte" x="738" y="116">02</text>
+    <rect class="g" x="770" y="84" width="56" height="50" rx="6"/><text class="byte" x="798" y="116">00</text>
+  </g>
+
+  <path class="tl" d="M50 142 V150 H226 V142"/>
+  <path class="tl" d="M230 142 V150 H346 V142"/>
+  <path class="tl" d="M350 142 V150 H706 V142"/>
+  <path class="tl" d="M710 142 V150 H766 V142"/>
+  <path class="tl" d="M770 142 V150 H826 V142"/>
+
+  <text class="sub" x="138" y="174">GET 请求，Normal</text>
+  <text class="sub" x="138" y="194">调用 ID 1</text>
+  <text class="sub" x="288" y="174">类 ID</text>
+  <text class="sub" x="288" y="194">8 = Clock</text>
+  <text class="sub" x="528" y="174">OBIS（对象的名字）</text>
+  <text class="sub" x="528" y="194">0-0:1.0.0.255</text>
+  <text class="sub" x="738" y="174">属性</text>
+  <text class="sub" x="738" y="194">2 = time</text>
+  <text class="sub" x="798" y="174">选择性</text>
+  <text class="sub" x="798" y="194">访问：无</text>
+
+  <text x="440" y="254" text-anchor="middle" font-size="18" font-weight="600" fill="#111827">
+    <tspan fill="#15803d">DLMS</tspan> 说"读取"，<tspan fill="#2563eb">COSEM</tspan> 说"Clock 对象的 time"
+  </text>
+</svg>
